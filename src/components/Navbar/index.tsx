@@ -43,7 +43,7 @@ const Navbar = () => {
 							icon="pajamas:hamburger"
 						/>
 					</button>
-				</div>
+				</div> 	
 				<nav className="hidden md:flex items-center">
 					<ul className="hidden md:flex gap-6 font-medium *:transition-all *:duration-150 hover:*:text-primaryText">
 						<li className="">
@@ -58,7 +58,7 @@ const Navbar = () => {
 						</li>
 						<li>
 							<Link href="#services">
-								Services
+								Resume
 							</Link>
 						</li>
 						<li>
@@ -86,7 +86,7 @@ const Navbar = () => {
 					</li>
 					<li>
 						<Link href="#services">
-							Services
+							Resume
 						</Link>
 					</li>
 					<li>

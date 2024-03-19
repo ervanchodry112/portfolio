@@ -3,6 +3,7 @@
 import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import Form from '@/components/Form';
 import Heroes from '@/components/Heroes';
 import Navbar from '@/components/Navbar';
 import ProjectList from '@/components/ProjectList';
@@ -17,7 +18,7 @@ export default function Home() {
 	return (
 		<>
 			<Navbar />
-			<main className="w-full px-4 lg:*:px-72 text-white bg-primary">
+			<main className="w-full px-4 lg:*:px-72 text-white bg-primary pb-20">
 				<Heroes />
 
 				<About />
@@ -29,6 +30,8 @@ export default function Home() {
 				<ProjectList />
 
 				<Contact />
+
+				<Form />
 			</main>
 			<Footer />
 		</>

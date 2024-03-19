@@ -1,13 +1,16 @@
-import Link from "next/link";
+/** @format */
+
+import Link from 'next/link';
+import Copyright from './Copyright';
+import Links from './Links';
 
 const Footer = () => {
-   return (
-      <footer className="bg-primaryText py-2 px-">
-         <div className="flex justify-center text-sm font-bold">
-         Copyright &copy;{new Date().getFullYear()} All Rights Reserved
-         </div>
-      </footer>
-   );
-}
+	return (
+		<footer className="w-full">
+			<Links />
+			<Copyright />
+		</footer>
+	);
+};
 
 export default Footer;
