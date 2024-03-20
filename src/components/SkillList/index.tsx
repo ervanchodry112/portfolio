@@ -41,13 +41,24 @@ const skills: Skills[] = [
 const SkillList = () => {
 	let id = 0;
 	return (
-		<>
-			{skills.map((item) => {
-				return (
-					<SkillCard key={id++} {...item} />
-				);
-			})}
-		</>
+		<section
+			id="skills"
+			className="py-10 space-y-5">
+			<h2 className="text-center text-4xl text-primaryText font-bold">
+				Skills
+			</h2>
+
+			<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 justify-center">
+				{skills.map((item) => {
+					return (
+						<SkillCard
+							key={id++}
+							{...item}
+						/>
+					);
+				})}
+			</div>
+		</section>
 	);
 };
 

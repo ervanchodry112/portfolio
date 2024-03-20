@@ -45,4 +45,5 @@ declare global {
 		image: string[],
 		description: string
 	}
+
 }
