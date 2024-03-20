@@ -10,11 +10,13 @@ const Navbar = () => {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
 
 	const handleNavbar = () => {
+		console.log();
+		
 		setIsOpen(!isOpen);
 	};
 
 	return (
-		<header className="w-full fixed top-0">
+		<header className="bg-primary md:bg-transparent w-full fixed top-0 z-20">
 			<div className="flex justify-between items-center w-full px-4 lg:px-72 py-4 text-white">
 				<div>
 					<Link href="/">
@@ -41,9 +43,9 @@ const Navbar = () => {
 							icon="pajamas:hamburger"
 						/>
 					</button>
-				</div>
+				</div> 	
 				<nav className="hidden md:flex items-center">
-					<ul className="hidden lg:flex gap-6 font-medium *:transition-all *:duration-150 hover:*:text-primaryText">
+					<ul className="hidden md:flex gap-6 font-medium *:transition-all *:duration-150 hover:*:text-primaryText">
 						<li className="">
 							<Link href="#hero">
 								Home
@@ -56,7 +58,7 @@ const Navbar = () => {
 						</li>
 						<li>
 							<Link href="#services">
-								Services
+								Resume
 							</Link>
 						</li>
 						<li>
@@ -73,7 +75,7 @@ const Navbar = () => {
 				</nav>
 			</div>
 			<nav className={isOpen ? 'md:hidden block' : 'hidden'}>
-				<ul className="bg-primary text-white px-4 font-medium *:transition-all *:duration-150 hover:*:text-primaryText *:p-1 *:rounded-md *:text-center hover:*:bg-secondary">
+				<ul className="bg-transparent text-white px-4 font-medium *:transition-all *:duration-150 hover:*:text-primaryText *:p-2 *:rounded-md *:text-center *:border-y hover:*:bg-secondary">
 					<li>
 						<Link href="#hero">Home</Link>
 					</li>
@@ -84,7 +86,7 @@ const Navbar = () => {
 					</li>
 					<li>
 						<Link href="#services">
-							Services
+							Resume
 						</Link>
 					</li>
 					<li>
